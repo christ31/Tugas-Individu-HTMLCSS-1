@@ -207,3 +207,21 @@ main{
   grid-template-columns: 237px 237px 237px;
 }
 
+/* 4. Ask Us */
+.ask-us{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.ask-us h1{
+  font-size: 48px;
+  color: #0F8B8D;
+  margin-bottom: 30px;
+}
+
+.ask-us p{
+  font-size: 24px;
+  color: #143642;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

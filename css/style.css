@@ -102,7 +102,6 @@ main{
   height: 460px;
 
   border-radius: 20px;
-
   object-fit: cover;
 }
 
@@ -111,7 +110,6 @@ main{
   height: 335px;
 
   border-radius: 20px;
-
   object-fit: cover;
 }
 
@@ -120,7 +118,6 @@ main{
   height: 453px;
 
   border-radius: 20px;
-
   object-fit: cover;
 }
 
@@ -137,9 +134,11 @@ main{
   display: inline-block;
 
   font-size: 48px;
+  font-weight: 1000;
   color: #0F8B8D;
+  margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 
   border-bottom: 5px solid #EC9A29;
 }
@@ -176,12 +175,12 @@ main{
   height: 632px;
   width: 927px;
   margin: 0 auto;
-
   text-align: center;
 }
 
 .find-us h1{
   font-size: 48px;
+  font-weight: 1000;
   color: #0F8B8D;
   margin-bottom: 50px;
 }
@@ -209,12 +208,14 @@ main{
 
 /* 4. Ask Us */
 .ask-us{
+  margin-top: 100px;
   text-align: center;
   margin-bottom: 100px;
 }
 
 .ask-us h1{
   font-size: 48px;
+  font-weight: 1000;
   color: #0F8B8D;
   margin-bottom: 30px;
 }
@@ -233,12 +234,15 @@ footer{
   border-radius: 30px;
 
   padding: 100px 100px;
-
   display: flex;
 }
 
 footer div{
   flex: auto;
+}
+
+footer div img{
+  height: 67px;
 }
 
 .footer-link-email{
@@ -247,11 +251,13 @@ footer div{
 }
 
 .footer-link-email img{
+  height: 48px;
   margin-right: 10px;
 }
 
 footer div h4{
   margin-top: 0px;
+  margin-bottom: 0px;
   color: #EC9A29;
   font-size: 24px;
 }
@@ -259,4 +265,5 @@ footer div h4{
 footer div p{
   color: #F9FBFE;
   font-size: 24px;
+  margin-top: 20px;
 }

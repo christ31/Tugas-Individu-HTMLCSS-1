@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  font-family: 'lato';
+}
+
+body{
+  margin:0;
+  width: 1440px;
+}
+
+/* 1. Nav + Header */
+header{
+  background: url("../img/Coffe Header.png");
+  background-size: cover;
+
+  height: 700px;
+  border-radius: 30px;
+
+  margin-bottom: 100px;
+}
+
+nav{
+  margin: 39px 138px;
+  display: flex;
+}
+
+.header-mask{
+  background: rgba(20, 54, 66, 0.7);
+  height: 100%;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+}
+
+.header-left{
+  flex: auto;
+}
+
+.header-left img{
+  width: 335px;
+}
+
+.header-right{
+  display:flex;
+  flex-direction: row;
+
+  transition: gap 0.3s;
+}
+
+.header-link{
+  margin: auto auto;
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.header-hero-container{
+  text-align: center;
+  
+  height: 100%;
+  align-self: center;
+  display:flex;
+
+  position: absolute;
+}
+
+.header-hero{
+  width: 499px;
+  color: white;
+  align-self: center;
+}
+
+.header-hero h1{
+  font-size: 70px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.header-hero p{
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+/* 2. Main */
+main{
+  width: 925px;
+  margin: 0 257px 0 257px;
+}
+
+.main-card-container{
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.main-card-img img{
+  width: 335px;
+  height: 460px;
+
+  border-radius: 20px;
+
+  object-fit: cover;
+}
+
+.main-card-img-2 img{
+  width: 335px;
+  height: 335px;
+
+  border-radius: 20px;
+
+  object-fit: cover;
+}
+
+.main-card-img-3 img{
+  width: 453px;
+  height: 453px;
+
+  border-radius: 20px;
+
+  object-fit: cover;
+}
+
+.main-card-desc{
+
+}
+
+.margin-left{
+  margin-left: 100px;
+}
+
+.margin-right{
+  margin-right: 100px;
+}
+
+.main-card-desc h1{
+  font-size: 48px;
+  color: #0F8B8D;
+  margin-bottom: 0px;
+}
+
+.main-card-desc p{
+  font-size: 24px;
+  color: #143642;
+  margin-top: 0px;
+}
+
+.main-card-line-separator{
+  height: 5px;
+  width: 278px;
+  margin: 22px 0;
+
+  background: #EC9A29;
+}
+
+.btn{
+  width: 335px;
+  height: 70px;
+
+  background: #A8201A;
+  color: white;
+  font-size: 24px;
+
+  border-radius: 300px;
+  border: none;
+
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.btn a{
+  color: white;
+  text-decoration: none;
+}
+

@@ -5,7 +5,7 @@
 
 body{
   margin:0;
-  width: 1440px;
+  /* width: 1440px; */
 }
 
 /* 1. Nav + Header */
@@ -89,7 +89,7 @@ nav{
 /* 2. Main */
 main{
   width: 925px;
-  margin: 0 257px 0 257px;
+  margin: 0 auto;
 }
 
 .main-card-container{
@@ -175,7 +175,7 @@ main{
 .find-us{
   height: 632px;
   width: 927px;
-  margin: 0 257px 100px 257px;
+  margin: 0 auto;
 
   text-align: center;
 }

@@ -15,7 +15,6 @@ header{
 
   height: 700px;
   border-radius: 30px;
-
   margin-bottom: 100px;
 }
 
@@ -125,10 +124,6 @@ main{
   object-fit: cover;
 }
 
-.main-card-desc{
-
-}
-
 .margin-left{
   margin-left: 100px;
 }
@@ -138,23 +133,22 @@ main{
 }
 
 .main-card-desc h1{
+  width: fit;
+  display: inline-block;
+
   font-size: 48px;
   color: #0F8B8D;
   margin-bottom: 0px;
+  padding-bottom: 30px;
+
+  border-bottom: 5px solid #EC9A29;
 }
 
 .main-card-desc p{
   font-size: 24px;
   color: #143642;
-  margin-top: 0px;
-}
-
-.main-card-line-separator{
-  height: 5px;
-  width: 278px;
-  margin: 22px 0;
-
-  background: #EC9A29;
+  margin-top: 20px;
+  margin-bottom: 45px;
 }
 
 .btn{
@@ -175,5 +169,41 @@ main{
 .btn a{
   color: white;
   text-decoration: none;
+}
+
+/* 3, Find Us */
+.find-us{
+  height: 632px;
+  width: 927px;
+  margin: 0 257px 100px 257px;
+
+  text-align: center;
+}
+
+.find-us h1{
+  font-size: 48px;
+  color: #0F8B8D;
+  margin-bottom: 50px;
+}
+
+.span-yellow a{
+  font-size: 48px;
+  color: #EC9A29;
+  text-decoration: none;
+
+  border-bottom: 2px solid #EC9A29; 
+}
+
+.find-us-feed img{
+  width: 100%;
+}
+
+.find-us-feed-img{
+  display: grid;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  grid-template-columns: 237px 237px 237px;
 }
 

@@ -225,3 +225,38 @@ main{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* 5. Footer */
+footer{
+  background: #143642;
+  height: 480px;
+  border-radius: 30px;
+
+  padding: 100px 100px;
+
+  display: flex;
+}
+
+footer div{
+  flex: auto;
+}
+
+.footer-link-email{
+  margin-top: 30px;
+  filter: invert(100%) sepia(93%) saturate(28%) hue-rotate(24deg) brightness(108%) contrast(107%);
+}
+
+.footer-link-email img{
+  margin-right: 10px;
+}
+
+footer div h4{
+  margin-top: 0px;
+  color: #EC9A29;
+  font-size: 24px;
+}
+
+footer div p{
+  color: #F9FBFE;
+  font-size: 24px;
+}

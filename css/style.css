@@ -90,6 +90,7 @@ nav{
 main{
   width: 925px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .main-card-container{

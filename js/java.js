@@ -1,15 +1,21 @@
+// Get all elements with class "js-scroll"
 const scrollElements = document.querySelectorAll(".js-scroll");
 
-const elementInView = (el, dividend = 1) => {
+// Get boolean value if elementInView
+const elementInView = (el) => {
+
+  // elementTop is the distance between the top of the element to the top of the page
   const elementTop = el.getBoundingClientRect().top;
 
   return (
-    elementTop <=
-    (window.innerHeight || document.documentElement.clientHeight) / dividend
+    elementTop <= (window.innerHeight/2 || document.documentElement.clientHeight/2)
   );
 };
 
+// Get boolean value if elementOutView
 const elementOutofView = (el) => {
+
+  // elementTop is the distance between the top of the element to the top of the page
   const elementTop = el.getBoundingClientRect().top;
 
   return (
@@ -17,14 +23,17 @@ const elementOutofView = (el) => {
   );
 };
 
+// Add class scrolled on an element
 const displayScrollElement = (element) => {
   element.classList.add("scrolled");
 };
 
+// Hide clas scrolled on an element
 const hideScrollElement = (element) => {
-  element.classList.remove("scrolled");
+  // element.classList.remove("scrolled");
 };
 
+// ! The main
 const handleScrollAnimation = () => {
   scrollElements.forEach((el) => {
     if (elementInView(el, 1.25)) {
@@ -39,38 +48,12 @@ window.addEventListener("scroll", () => {
   handleScrollAnimation();
 });
 
+let runInterval = setInterval(runDebug, 250);
 
-
-/*
-let options = {
-  threshold: 1.0
+function runDebug(){
+  document.getElementById('dbg-window-width').innerHTML = "Width: " + window.innerHeight;
 }
-// Create the observer
-const observer = new IntersectionObserver(entries => {
-  // We will fill in the callback later...
 
-  // Loop over the entries
-  entries.forEach(entry => {
-    // If the element is visible
-    if (entry.isIntersecting) {
-      // Add the animation class
-      entry.target.classList.add('main-card-container-fly-down');
-    }
-  });
-});
-
-let element = ".main-card-container";
-
-
-
-document.querySelectorAll(element).forEach((i) => {
-  if (i){
-    observer.observe(i);
-  }
-})
-
-*/
-// ! querySelector only return the first list of the class
-// ! querySelectorAll return every 
-
-
+function showDebug(){
+  document.getElementById('dbg').classList.remove("hide");
+}

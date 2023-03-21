@@ -1,14 +1,16 @@
+// Get all elements with class "js-scroll"
 const scrollElements = document.querySelectorAll(".js-scroll");
 
-const elementInView = (el, dividend = 1) => {
+// Get boolean value if elementInView
+const elementInView = (el) => {
   const elementTop = el.getBoundingClientRect().top;
 
   return (
-    elementTop <=
-    (window.innerHeight || document.documentElement.clientHeight) / dividend
+    elementTop <= (window.innerHeight || document.documentElement.clientHeight)
   );
 };
 
+// Get boolean value if elementOutView
 const elementOutofView = (el) => {
   const elementTop = el.getBoundingClientRect().top;
 
@@ -17,10 +19,12 @@ const elementOutofView = (el) => {
   );
 };
 
+// Add class scrolled on an element
 const displayScrollElement = (element) => {
   element.classList.add("scrolled");
 };
 
+// Hide clas scrolled on an element
 const hideScrollElement = (element) => {
   element.classList.remove("scrolled");
 };

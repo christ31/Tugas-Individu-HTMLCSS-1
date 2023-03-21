@@ -1,3 +1,4 @@
+/* ! Shared */
 * {
   box-sizing: border-box;
   font-family: 'lato';
@@ -9,7 +10,6 @@ body{
   height: 900px;
 }
 
-/* 1. Nav + Header */
 header{
   background: url("../img/Coffe Header.png");
   background-size: cover;
@@ -18,11 +18,32 @@ header{
   border-radius: 30px;
 }
 
+.header-v2{
+  background: #0F8B8D;
+  border-radius: 30px 30px 0 0;
+}
+
 nav{
-  margin: 39px 138px;
+  padding: 39px 138px;
   display: flex;
 }
 
+.title-blue{
+  font-size: 48px;
+  font-weight: 1000;
+  color: #0F8B8D;
+}
+
+.parag-slate{
+  font-size: 24px;
+  color: #143642;
+}
+
+.centered{
+  text-align: center;
+}
+
+/* 1. Nav + Header */
 .header-mask{
   background: rgba(20, 54, 66, 0.7);
   height: 100%;
@@ -32,7 +53,6 @@ nav{
   flex-direction: column;
 
   position: relative;
-
 }
 
 .header-left{
@@ -179,6 +199,83 @@ main{
 .btn a{
   color: white;
   text-decoration: none;
+}
+
+.menu-main{
+  margin: 100px auto;
+}
+
+.menu-main-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+
+  width: 887px;
+  height: 472px;
+
+  margin: 40px auto;
+}
+
+.menu-main-card-container a{
+  display: flex;
+  text-decoration: none;
+}
+
+.menu-main-card{
+  margin-top: 0px;
+
+  background: url("../img/Coffee background.png");
+  width: 216px;
+  height: 216px;
+
+  transition: all 0.5s;
+}
+
+.menu-main-card:hover{
+  transform: scale(1.1);
+}
+
+.menu-main-card-desc{
+  transition: all 0.5s;
+}
+
+.menu-main-card:hover > .menu-main-card-desc{
+  transform: translateY(120px);
+}
+
+.menu-main-card-img{
+  transition: all 0.5s;
+}
+
+.menu-main-card:hover > .menu-main-card-img{
+  transform: translateY(-70px);
+}
+
+.menu-main-card img{
+  height: 139.63px;
+}
+
+.menu-main-card{
+  border-radius: 20px;
+}
+
+.menu-main-card h4{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.menu-main-card h5{
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* 3, Find Us */

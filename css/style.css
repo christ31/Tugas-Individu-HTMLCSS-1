@@ -6,6 +6,7 @@
 body{
   margin:0;
   /* width: 1440px; */
+  height: 900px;
 }
 
 /* 1. Nav + Header */
@@ -15,7 +16,6 @@ header{
 
   height: 700px;
   border-radius: 30px;
-  margin-bottom: 100px;
 }
 
 nav{
@@ -86,15 +86,27 @@ nav{
   margin-bottom: 0px;
 }
 
-/* 2. Main */
+/*! 2. Main */
 main{
   width: 925px;
   margin: 0 auto;
 }
 
 .main-card-container{
+  width: 925px;
+  margin: 0 auto;
+
   display: flex;
-  margin-bottom: 100px;
+  padding-top: 100px;
+
+  transition: all 1s;
+  transition-delay: 1s;
+
+  opacity: 0;
+}
+
+.scrolled{
+  opacity: 1;
 }
 
 .main-card-img img{
@@ -266,4 +278,51 @@ footer div p{
   color: #F9FBFE;
   font-size: 24px;
   margin-top: 20px;
+}
+
+
+/* ! Animation */
+.scrolled.slide-in-right{
+  animation: masuk-kanan 1s;
+}
+
+.scrolled.slide-in-left{
+  animation: masuk-kiri 1s;
+}
+
+.scrolled.slide-in-up{
+  animation: masuk-atas 1s;
+}
+
+@keyframes masuk-kiri{
+  0% {
+    transform: translateX(100px);
+    opacity: 0%;  
+  }
+  100% {
+    transform: translateX(0px); 
+    opacity: 100%;
+  }
+}
+
+@keyframes masuk-kanan {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes masuk-atas {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

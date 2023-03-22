@@ -72,10 +72,17 @@ nav{
 
 .header-link{
   margin: auto auto;
-  padding: 0 20px;
+  padding: 20px 20px;
   text-decoration: none;
   color: white;
   font-size: 30px;
+
+  transition: all 0.3s;
+}
+
+.header-link:hover{
+  background: #EC9A29;
+  border-radius: 20px;
 }
 
 .header-hero-container{

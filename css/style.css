@@ -194,6 +194,13 @@ main{
 
   display: table-cell;
   vertical-align: middle;
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover{
+  transform: scaleX(1.05);
 }
 
 .btn a{
@@ -402,6 +409,60 @@ main{
   width: 581.95px;
   border-radius: 20px;
 }
+
+.help-main{
+  width: 926px;
+  margin: 100px auto;
+}
+
+.help-main-form{
+  border: 2px solid #D2D2D2;
+  padding: 50px 96px;
+  border-radius: 20px;
+}
+
+.help-main-form .btn{
+  margin-top: 20px;
+}
+
+.help-main-sub-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.help-main-sub-container p{
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto 0;
+}
+
+.help-main-sub-container input, textarea{
+  border-radius: 20px;
+  border: 2px solid #D2D2D2;
+  padding: 20px 30px;
+  font-size: 24px;
+
+  width: 493px;
+}
+
+.help-main-sub-container textarea{
+  border-radius: 20px;
+  border: 2px solid #D2D2D2;
+  padding: 20px 30px;
+  font-size: 24px;
+
+  width: 493px;
+  height: 200px;
+
+  resize: vertical;
+}
+
+.help-main-sub-container .label-text-area{
+  margin: 20px 0;
+}
+
 
 
 /* 3, Find Us */

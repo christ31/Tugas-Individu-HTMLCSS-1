@@ -360,6 +360,49 @@ main{
 
 }
 
+/*! findus.html */
+.findus-main{
+  width: 1164px;
+  display: flex;
+  margin: 100px auto;
+}
+
+.findus-main-left{
+  width: 526px;
+}
+
+.findus-main-card{
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #D2D2D2;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  margin-top: 20px;
+}
+
+.findus-main-card h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.findus-main-card p{
+  font-size: 20px;
+}
+
+.findus-main-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.findus-main-right img{
+  width: 581.95px;
+  border-radius: 20px;
+}
+
 
 /* 3, Find Us */
 .find-us{

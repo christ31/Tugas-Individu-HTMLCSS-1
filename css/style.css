@@ -365,13 +365,23 @@ main{
 
   display: flex;
   text-align: center;
+
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .btn2 span img{
   filter: invert(100%) sepia(93%) saturate(28%) hue-rotate(24deg) brightness(108%) contrast(107%);
   transform: scaleX(-1.4);
   margin-right: 10px;
+}
 
+.btn2:hover{
+  transform: scaleX(1.05);
+}
+
+.detail-body-content a{
+  text-decoration: none;
 }
 
 /*! findus.html */
